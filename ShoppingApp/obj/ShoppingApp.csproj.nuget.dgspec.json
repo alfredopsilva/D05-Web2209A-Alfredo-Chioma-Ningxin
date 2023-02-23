@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Y:\\D05-Web2209A-Alfredo-Chioma-Ningxin\\ShoppingApp\\ShoppingApp.csproj": {}
+    "C:\\Users\\isi.751FJW2\\REPOS\\D05-Web2209A-Alfredo-Chioma-Ningxin\\ShoppingApp\\ShoppingApp.csproj": {}
   },
   "projects": {
-    "Y:\\D05-Web2209A-Alfredo-Chioma-Ningxin\\ShoppingApp\\ShoppingApp.csproj": {
+    "C:\\Users\\isi.751FJW2\\REPOS\\D05-Web2209A-Alfredo-Chioma-Ningxin\\ShoppingApp\\ShoppingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\D05-Web2209A-Alfredo-Chioma-Ningxin\\ShoppingApp\\ShoppingApp.csproj",
+        "projectUniqueName": "C:\\Users\\isi.751FJW2\\REPOS\\D05-Web2209A-Alfredo-Chioma-Ningxin\\ShoppingApp\\ShoppingApp.csproj",
         "projectName": "ShoppingApp",
-        "projectPath": "Y:\\D05-Web2209A-Alfredo-Chioma-Ningxin\\ShoppingApp\\ShoppingApp.csproj",
-        "packagesPath": "C:\\Users\\parreira\\.nuget\\packages\\",
-        "outputPath": "Y:\\D05-Web2209A-Alfredo-Chioma-Ningxin\\ShoppingApp\\obj\\",
+        "projectPath": "C:\\Users\\isi.751FJW2\\REPOS\\D05-Web2209A-Alfredo-Chioma-Ningxin\\ShoppingApp\\ShoppingApp.csproj",
+        "packagesPath": "C:\\Users\\isi.751FJW2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isi.751FJW2\\REPOS\\D05-Web2209A-Alfredo-Chioma-Ningxin\\ShoppingApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\parreira\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\isi.751FJW2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,15 +50,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
