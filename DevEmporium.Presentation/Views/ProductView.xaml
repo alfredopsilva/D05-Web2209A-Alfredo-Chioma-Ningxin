@@ -1,0 +1,93 @@
+﻿<UserControl x:Class="DevEmporium.Presentation.Views.ProductView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DevEmporium.Presentation.Views"
+             mc:Ignorable="d">
+    <StackPanel Height="500" Width="400" >
+        <StackPanel.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#3e545f" Offset="0"/>
+                <GradientStop Color="#3e545f" Offset="0.75"/>
+            </LinearGradientBrush>
+        </StackPanel.Background>
+        <StackPanel>
+            <Image Source="{Binding Path=SelectedProduct.Url,TargetNullValue='IMG Error'}" 
+                   Width="350"
+                   Height="150"
+                   Margin="20 20 0 0"/>
+            <Separator Background="Transparent" Height="20"/>
+            <StackPanel Height="85">
+                <TextBlock Text="{Binding Path=SelectedProduct.Name, TargetNullValue='No product selected'}"
+                           Foreground="White"
+                           FontSize="16"
+                           Height="25"
+                           Margin="35 0 0 0"
+                           />
+                <StackPanel x:Name="priceStack"
+                            Orientation="Horizontal">
+                    <Label Content="Price :"
+                           Foreground="White"
+                           FontSize="14"
+                           Margin="30 0 0 0"/>
+                    <Label Content="{Binding Path=SelectedProduct.Price}"
+                           Foreground="White"
+                           FontSize="14"
+                           x:Name="priceProduct"/>
+                </StackPanel>
+                <StackPanel x:Name="categoryStack"
+                            Orientation="Horizontal">
+                    <Label Content="Category :"
+                           Foreground="White"
+                           FontSize="14"
+                           Margin="30 0 0 0"/>
+                    <Label Content="{Binding Path=SelectedProduct.Category}"
+                           Foreground="White"
+                           FontSize="14"/>
+                </StackPanel>
+            </StackPanel>
+            <Separator Background="Transparent" Height="20"/>
+            <TextBlock Text="{Binding Path=SelectedProduct.Description}"
+                        Height="100"
+                        Padding="30 0 30 0"
+                        Foreground="White"
+                        FontSize="12"
+                        TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <Separator Background="Transparent" Height="30"/>
+        <Button x:Name="OnLogInButtonClick"
+                Background="#DAE2E7"
+                Content="Buy"
+                FontSize="14"
+                FontWeight="Bold"
+                Foreground="black"
+                FontFamily="Montserrat"
+                Cursor="Hand"
+                Grid.Column="1"
+                Command="{Binding Path=BuyCommand}">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="blue"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Background" Value="Yellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="150" Height="28"
+                                        CornerRadius="14"
+                                        Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                                       HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+    </StackPanel>
+</UserControl>

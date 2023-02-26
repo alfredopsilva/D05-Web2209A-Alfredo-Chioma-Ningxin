@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\D05-Web2209A\Utility\Chevalier.Utility\Chevalier.Utility.csproj" />
+    <ProjectReference Include="..\DevEmporium.Domain\DevEmporium.Domain.csproj" />
+    <ProjectReference Include="..\DevEmporium.Persistence\DevEmporium.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
